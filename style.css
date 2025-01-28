@@ -1,0 +1,12 @@
+body{
+    background: #000;
+}
+
+main{
+    background: rgb(20,19,19);
+    background: linear-gradient(180deg, rgba(20,19,19,1) 0%, rgba(24,23,24,1) 18%, rgba(25,24,25,1) 100%);
+}
+
+menu{
+    background: rgb(20,19,19);
+}
