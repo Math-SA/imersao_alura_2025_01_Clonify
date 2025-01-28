@@ -58,12 +58,12 @@ body{
     margin-top: 10px;
 }
 
-.library .library__content{
+.library__content{
     display:flex;
     justify-content: space-between;
 }
 
-.library .library__button{
+.library__button{
     display:flex;
     margin-right: 10px;
     color:#b3b3b3;
@@ -78,7 +78,7 @@ body{
     padding:20px 10px;
 }
 
-.library .library__button .fa{
+.library__button .fa{
     font-size:20px;
     font-weight: 300;
     color:#b3b3b3;
@@ -86,7 +86,7 @@ body{
     padding-right:8px;
 }
 
-.library .library__content .fa-plus{
+.library__content .fa-plus{
     margin: 24px 10px;
 }
 
@@ -104,7 +104,7 @@ body{
     border-radius:10px;
 }
 
-.section-playlist .section-playlist__content{
+.section-playlist__content{
     display:flex;
     flex-direction: column;
 }
@@ -124,7 +124,7 @@ body{
     font-size: 12px;
 }
 
-.section-playlist__content .section-playlist__button{
+.section-playlist__button{
     display: flex;
     justify-content: center;
     background-color: #FFF;
@@ -141,11 +141,11 @@ body{
     width: 113px;
 }
 
-.sidebar .cookies{
+.library__cookies{
     margin:25px 20px;
 }
 
-.sidebar .cookies a{
+.library__cookies a{
     color:#b3b3b3;
     font-family: "DM Sans", sans-serif;
     font-weight: 500;
@@ -153,11 +153,11 @@ body{
     text-decoration: none;
 }
 
-.sidebar .cookies a:hover{
+.library__cookies a:hover{
     text-decoration: underline;
 }
 
-.languages .languages__button{
+.languages__button{
     align-items: center;
     background-color: transparent;
     border: 1px solid #878787;
