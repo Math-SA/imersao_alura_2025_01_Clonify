@@ -23,6 +23,10 @@ a{
     gap: 20px;
 }
 
+#top_nav a{
+    color: #dedede;
+}
+
 
 #main-wrapper{
     display: flex;
