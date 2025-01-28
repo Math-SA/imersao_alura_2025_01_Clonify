@@ -5,10 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
+        <!-- Icons -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"/>
         <title>Clonify - It kinda looks like that app, but it is not!</title>
     </head>
     <body>
-        <header>
+        <header id="top_nav">
             <img src="logo" alt="Spotify logo" />
             <div class="search">
                 <img src="home icon" alt="Home Icon" />
@@ -24,79 +27,92 @@
                 </ul>
             </nav>
         </header>
-            <main>
+        <div id="main-wrapper">
+            <div id="menu-wrapper">
                 <menu>
                     <section class="library">
-                        <img src="lib icon" alt="Library Icon">
-                        <span>Your Library</span>
+                        <div>
+                            <img src="lib icon" alt="Library Icon">
+                            <span>Your Library</span>
+                        </div>
                         <div class="create_btn">+</div>
                     </section>
-                    <li>
-                        <div class="command">
-                            <h3>Create your first playlist</h3>
-                            <p>It's easy, we'll help you</p>
-                            <div class="button">Create playlist</div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="command">
-                            <h3>Let's find some podcasts to follow</h3>
-                            <p>We'll keep you updated on new episodes</p>
-                            <div class="button">Browse podcasts</div>
-                        </div>
-                    </li>
+                    <div id="commands">
+                        <li>
+                            <div class="command">
+                                <h3>Create your first playlist</h3>
+                                <p>It's easy, we'll help you</p>
+                                <a class="button" href="a">Create playlist</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="command">
+                                <h3>Let's find some podcasts to follow</h3>
+                                <p>We'll keep you updated on new episodes</p>
+                                <a class="button" href="action">Browse podcasts</a>
+                            </div>
+                        </li>
+                    </div>
+                </menu>
+                <footer>
                     <nav>
                         <ul>
-                            <li><a href="legal.html"></a>Legal</li>
-                            <li><a href="safety.html"></a>Safety & Privacy Center</li>
-                            <li><a href="privacy.html"></a>Privacy Policy</li>
-                            <li><a href="cookies.html"></a>Cookies</li>
-                            <li><a href="ads.html"></a>About Ads</li>
-                            <li><a href="accessibility"></a>Accessibility</li>
+                            <li><a href="legal.html">Legal</a></li>
+                            <li><a href="safety.html">Safety & Privacy Center</a></li>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="cookies.html">Cookies</a></li>
+                            <li><a href="ads.html">About Ads</a></li>
+                            <li><a href="accessibility.html">Accessibility</a></li>
+                        </ul>
+                        <ul>
                             <li><a href="cookies.html">MOAR COOKIES</a></li>
                         </ul>
+                        
                     </nav>
                     <div class="language">
                         <img src="world icon" alt="Wireframe World Icon">
                         English <!-- span? -->
                     </div>
-                </menu>
-            
+                </footer>   
+            </div>
+            <main>
                 <section class="artists">
                     <header>
                         <h1>Popular artists</h1>
                         <span>Show all</span>
                     </header>
-                    <article>
-                        <img src="" alt="">
-                        <h3>Artist 01</h3>
-                        <span>Artist</span>
-                    </article>
-                    <article>
-                        <img src="" alt="">
-                        <h3>Artist 02</h3>
-                        <span>Artist</span>
-                    </article>
-                    <article>
-                        <img src="" alt="">
-                        <h3>Artist 03</h3>
-                        <span>Artist</span>
-                    </article>
-                    <article>
-                        <img src="" alt="">
-                        <h3>Artist 04</h3>
-                        <span>Artist</span>
-                    </article>
-                    <article>
-                        <img src="" alt="">
-                        <h3>Artist 05</h3>
-                        <span>Artist</span>
-                    </article>
-                    <article>
-                        <img src="" alt="">
-                        <h3>Artist 06</h3>
-                        <span>Artist</span>
-                    </article>
+                    <div class="content">
+                        <article>
+                            <img src="region_global_default.jpg" alt="Photo">
+                            <h3>Artist 01</h3>
+                            <span>Artist</span>
+                        </article>
+                        <article>
+                            <img src="region_global_default.jpg" alt="Photo">
+                            <h3>Artist 02</h3>
+                            <span>Artist</span>
+                        </article>
+                        <article>
+                            <img src="region_global_default.jpg" alt="Photo">
+                            <h3>Artist 03</h3>
+                            <span>Artist</span>
+                        </article>
+                        <article>
+                            <img src="region_global_default.jpg" alt="Photo">
+                            <h3>Artist 04</h3>
+                            <span>Artist</span>
+                        </article>
+                        <article>
+                            <img src="region_global_default.jpg" alt="Photo">
+                            <h3>Artist 05</h3>
+                            <span>Artist</span>
+                        </article>
+                        <article>
+                            <img src="region_global_default.jpg" alt="Photo">
+                            <h3>Artist 06</h3>
+                            <span>Artist</span>
+                        </article>
+                    </div>
                 </section>
 
                 <section class="albums">
@@ -104,36 +120,38 @@
                         <h1>Popular albums and singles</h1>
                         <span>Show all</span>
                     </header>
-                    <article>
-                        <img src="" alt="">
-                        <h3>Album 01</h3>
-                        <span>Album</span>
-                    </article>
-                    <article>
-                        <img src="" alt="">
-                        <h3>Album 02</h3>
-                        <span>Album</span>
-                    </article>
-                    <article>
-                        <img src="" alt="">
-                        <h3>Album 03</h3>
-                        <span>Album</span>
-                    </article>
-                    <article>
-                        <img src="" alt="">
-                        <h3>Album 04</h3>
-                        <span>Album</span>
-                    </article>
-                    <article>
-                        <img src="" alt="">
-                        <h3>Album 05</h3>
-                        <span>Album</span>
-                    </article>
-                    <article>
-                        <img src="" alt="">
-                        <h3>Album 06</h3>
-                        <span>Album</span>
-                    </article>
+                    <div class="content">
+                        <article>
+                            <img src="region_global_default.jpg" alt="Album cover">
+                            <h3>Album 01</h3>
+                            <span>Album</span>
+                        </article>
+                        <article>
+                            <img src="region_global_default.jpg" alt="Album cover">
+                            <h3>Album 02</h3>
+                            <span>Album</span>
+                        </article>
+                        <article>
+                            <img src="region_global_default.jpg" alt="Album cover">
+                            <h3>Album 03</h3>
+                            <span>Album</span>
+                        </article>
+                        <article>
+                            <img src="region_global_default.jpg" alt="Album cover">
+                            <h3>Album 04</h3>
+                            <span>Album</span>
+                        </article>
+                        <article>
+                            <img src="region_global_default.jpg" alt="Album cover">
+                            <h3>Album 05</h3>
+                            <span>Album</span>
+                        </article>
+                        <article>
+                            <img src="region_global_default.jpg" alt="Album cover">
+                            <h3>Album 06</h3>
+                            <span>Album</span>
+                        </article>
+                    </div>
                 </section>
 
                 <section class="radio">
@@ -141,97 +159,104 @@
                         <h1>Popular radio</h1>
                         <span>Show all</span>
                     </header>
-                    <article>
-                        <img src="" alt="">
-                        <h3>That radio 01</h3>
-                        <span>radio</span>
-                    </article>
-                    <article>
-                        <img src="" alt="">
-                        <h3>That radio 02</h3>
-                        <span>radio</span>
-                    </article>
-                    <article>
-                        <img src="" alt="">
-                        <h3>That radio 03</h3>
-                        <span>radio</span>
-                    </article>
-                    <article>
-                        <img src="" alt="">
-                        <h3>That radio 04</h3>
-                        <span>radio</span>
-                    </article>
-                    <article>
-                        <img src="" alt="">
-                        <h3>That radio 05</h3>
-                        <span>radio</span>
-                    </article>
-                    <article>
-                        <img src="" alt="">
-                        <h3>That radio 06</h3>
-                        <span>radio</span>
-                    </article>
+                    <div class="content">
+                        <article>
+                            <img src="region_global_default.jpg" alt="Radio Image">
+                            <h3>That radio 01</h3>
+                            <span>radio</span>
+                        </article>
+                        <article>
+                            <img src="region_global_default.jpg" alt="Radio Image">
+                            <h3>That radio 02</h3>
+                            <span>radio</span>
+                        </article>
+                        <article>
+                            <img src="region_global_default.jpg" alt="Radio Image">
+                            <h3>That radio 03</h3>
+                            <span>radio</span>
+                        </article>
+                        <article>
+                            <img src="region_global_default.jpg" alt="Radio Image">
+                            <h3>That radio 04</h3>
+                            <span>radio</span>
+                        </article>
+                        <article>
+                            <img src="region_global_default.jpg" alt="Radio Image">
+                            <h3>That radio 05</h3>
+                            <span>radio</span>
+                        </article>
+                        <article>
+                            <img src="region_global_default.jpg" alt="Radio Image">
+                            <h3>That radio 06</h3>
+                            <span>radio</span>
+                        </article>
+                    </div>
                 </section>
 
                 <section class="charts">
                     <header>
                         <h1>Show all</h1>
                     </header>
-                    <article>
-                        <img src="" alt="">
-                        <p>some info about chart number 01</p>
-                    </article>
-                    <article>
-                        <img src="" alt="">
-                        <p>some info about chart number 02</p>
-                    </article>
-                    <article>
-                        <img src="" alt="">
-                        <p>some info about chart number 03</p>
-                    </article>
-                    <article>
-                        <img src="" alt="">
-                        <p>some info about chart number 04</p>
-                    </article>
-                    <article>
-                        <img src="" alt="">
-                        <p>some info about chart number 05</p>
-                    </article>
-                    <article>
-                        <img src="" alt="">
-                        <p>some info about chart number 06</p>
-                    </article>
+                    <div class="content">
+                        <article>
+                            <img src="region_global_default.jpg" alt="Chart Image">
+                            <p>some info about chart number 01</p>
+                        </article>
+                        <article>
+                            <img src="region_global_default.jpg" alt="Chart Image">
+                            <p>some info about chart number 02</p>
+                        </article>
+                        <article>
+                            <img src="region_global_default.jpg" alt="Chart Image">
+                            <p>some info about chart number 03</p>
+                        </article>
+                        <article>
+                            <img src="region_global_default.jpg" alt="Chart Image">
+                            <p>some info about chart number 04</p>
+                        </article>
+                        <article>
+                            <img src="region_global_default.jpg" alt="Chart Image">
+                            <p>some info about chart number 05</p>
+                        </article>
+                        <article>
+                            <img src="region_global_default.jpg" alt="Chart Image">
+                            <p>some info about chart number 06</p>
+                        </article>
+                    </div>
                 </section>
                 <section class="suggestions">
                     <header>
                         <h1>Pra acompanhar sua noite bilíngue</h1>
                         <span>Show all</span>
                     </header>
-                    <article>
-                        <img src="" alt="">
-                        <p>You'll love suggestion number 01 just because</p>
-                    </article>
-                    <article>
-                        <img src="" alt="">
-                        <p>You'll love suggestion number 02 just because</p>
-                    </article>
-                    <article>
-                        <img src="" alt="">
-                        <p>You'll love suggestion number 03 just because</p>
-                    </article>
-                    <article>
-                        <img src="" alt="">
-                        <p>You'll love suggestion number 04 just because</p>
-                    </article>
-                    <article>
-                        <img src="" alt="">
-                        <p>You'll love suggestion number 05 just because</p>
-                    </article>
-                    <article>
-                        <img src="" alt="">
-                        <p>You'll love suggestion number 06 just because</p>
-                    </article>
+                    <div class="content">
+                        <article>
+                            <img src="region_global_default.jpg" alt="Suggestion Image">
+                            <p>You'll love suggestion number 01 just because</p>
+                        </article>
+                        <article>
+                            <img src="region_global_default.jpg" alt="Suggestion Image">
+                            <p>You'll love suggestion number 02 just because</p>
+                        </article>
+                        <article>
+                            <img src="region_global_default.jpg" alt="Suggestion Image">
+                            <p>You'll love suggestion number 03 just because</p>
+                        </article>
+                        <article>
+                            <img src="region_global_default.jpg" alt="Suggestion Image">
+                            <p>You'll love suggestion number 04 just because</p>
+                        </article>
+                        <article>
+                            <img src="region_global_default.jpg" alt="Suggestion Image">
+                            <p>You'll love suggestion number 05 just because</p>
+                        </article>
+                        <article>
+                            <img src="region_global_default.jpg" alt="Suggestion Image">
+                            <p>You'll love suggestion number 06 just because</p>
+                        </article>
+                    </div>
                 </section>
-        </main>
+            </main>
+        </div>    
     </body>
 </html>
