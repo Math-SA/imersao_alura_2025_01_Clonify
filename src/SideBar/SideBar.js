@@ -11,7 +11,7 @@ const SideBar = () => {
                 <div className="logo">
                     <a href="">
                         <FontAwesomeIcon icon={faMusic}></FontAwesomeIcon>
-                        <span>Clonify - Cloning that music platform for learning purpose</span>
+                        <span>Clonify - Cloning that music platform for learning purposes</span>
                     </a>
                 </div>
                 <ul>

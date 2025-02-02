@@ -16,6 +16,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
   }
   
   .header__navigation .navigation .arrow-left {
@@ -24,6 +25,7 @@
   
   .arrow-left,
   .arrow-right {
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,6 +44,8 @@
   }
   
   .header__search {
+    padding: 0px 20px;
+    color: #fff;
     display: flex;
     align-items: center;
     width: 364px;
@@ -75,6 +79,10 @@
     font-weight: 700;
     background-color: transparent;
     margin-right: 32px;
+  }
+
+  .header__login .subscribe:hover{
+    text-decoration: underline;
   }
   
   .header__login .login {

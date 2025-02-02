@@ -1,8 +1,7 @@
 import {React} from "react";
 import './Header.css';
-import leftArrow from '../assets/icons/small-left.png';
-import rightArrow from '../assets/icons/small-right.png';
-import search from "../assets/icons/search.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft, faArrowRight, faSearch } from "@fortawesome/free-solid-svg-icons";
 
 const Header = ({inputHandler}) => {
 
@@ -10,14 +9,14 @@ const Header = ({inputHandler}) => {
         <nav className="header__navigation">
                 <div className="navigation">
                     <button className="arrow-left">
-                        <img src={leftArrow}/>
+                        <FontAwesomeIcon icon={faArrowLeft}></FontAwesomeIcon>
                     </button>
                     <button className="arrow-right">
-                        <img src={rightArrow}/>
+                    <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
                     </button>
                 </div>
                 <div className="header__search">
-                    <img src={search} />
+                    <FontAwesomeIcon icon={faSearch}></FontAwesomeIcon>
                     <input id="search-input" 
                         aria-label="Search"
                         onChange={inputHandler}
