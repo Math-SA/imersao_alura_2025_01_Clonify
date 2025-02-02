@@ -1,4 +1,4 @@
-import {react, useState} from "react";
+import {React} from "react";
 import './Header.css';
 import leftArrow from '../assets/icons/small-left.png';
 import rightArrow from '../assets/icons/small-right.png';
@@ -19,6 +19,7 @@ const Header = ({inputHandler}) => {
                 <div className="header__search">
                     <img src={search} />
                     <input id="search-input" 
+                        aria-label="Search"
                         onChange={inputHandler}
                         maxLength="800" autoCorrect="off" autoCapitalize="off" spellCheck="false"
                         placeholder="O que você quer ouvir?" />

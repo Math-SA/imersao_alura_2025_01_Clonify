@@ -1,7 +1,7 @@
-import react from "react";
+import React from "react";
 import Recommender from "../Recommender/Recommender";
 import SearchResults from "../SearchResults/SearchResults";
-import { useState, useEffect } from "react";
+
 
 
 
@@ -16,7 +16,7 @@ const Main = ({ searchString }) => {
     } else {
             return (
                 <div className="main-container">
-                    <SearchResults searchString={searchString} key={searchString.length}></SearchResults>
+                    <SearchResults searchString={searchString}></SearchResults>
                 </div>
             )
     }

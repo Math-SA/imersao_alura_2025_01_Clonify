@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 import './SideBar.css';
 import spotifyLogo from "../assets/icons/logo-spotify.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
