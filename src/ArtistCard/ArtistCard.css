@@ -1,9 +1,3 @@
-.artist {
-  --column-count: 5;
-  --grid-gap: 24px;
-  --min-container-width: 372px;
-}
-
 .hidden {
   display: none;
 }
@@ -12,7 +6,7 @@
 
 .artist-card {
   background: #181818;
-  max-width: 300px;
+  max-width: 260px;
   border-radius: 8px;
   -ms-flex: 1;
   flex: 1;

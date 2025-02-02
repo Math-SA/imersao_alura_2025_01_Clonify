@@ -24,8 +24,8 @@ const SearchResults = ({ searchString }) => {
     );
 
     return (
-        <div id="result-artist">
-            <div className="grid-container">
+        <div className="search-result">
+            <div className="search-result__grid-container">
                 {artistList.length > 0 && result}                
                 {artistList.length === 0 && <span className="card-text artist-name artist-card">Nenhum artista encontrado.</span>}
             </div>
