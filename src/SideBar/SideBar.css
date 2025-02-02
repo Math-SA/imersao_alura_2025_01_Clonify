@@ -14,7 +14,21 @@
     display:flex;
     border-radius:8px ;
     padding:16px 0 0 16px;
+    font-size: larger;
 }
+
+.logo a{
+    text-decoration: none;
+    color: #b3b3b3;
+    display: flex;
+    gap: 8px;
+}
+
+.logo a:visited{
+    color: #b3b3b3;
+    text-decoration: none;
+}
+
 
 .sidebar__navigation .logo img{
     width:80px;
@@ -34,6 +48,8 @@
     text-decoration: none;
     font-weight: 600;
     font-size: 14px;
+    display: flex;
+    gap: 8px;
 }
 .sidebar nav ul li a:visited{
     color: #b3b3b3;
@@ -71,6 +87,7 @@
     text-decoration: none;
     text-transform: none;
     padding:20px 10px;
+    gap: 8px;
 }
 
 .library__button .fa{
@@ -132,11 +149,13 @@
     margin-top: 12px;
     border:0;
     width: 113px;
+    gap: 8px;
 }
 
 
 
 .languages .languages__button{
+    display: flex;
     align-items: center;
     background-color: transparent;
     border: 1px solid #878787;
@@ -147,6 +166,7 @@
     margin:8px;
     padding:8px;
     border-radius:20px;
+    gap: 8px;
 }
 
 

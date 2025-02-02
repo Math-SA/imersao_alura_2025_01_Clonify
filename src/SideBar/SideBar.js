@@ -1,8 +1,7 @@
 import React from "react";
 import './SideBar.css';
-import spotifyLogo from "../assets/icons/logo-spotify.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBook, faGlobe, faHome, faHouse, faPlus, faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faBook, faGlobe, faHome, faMusic, faPlus, faSearch, faWaveSquare } from "@fortawesome/free-solid-svg-icons";
 
 
 const SideBar = () => {
@@ -11,7 +10,8 @@ const SideBar = () => {
             <nav className="sidebar__navigation">
                 <div className="logo">
                     <a href="">
-                        <img src={spotifyLogo}/>
+                        <FontAwesomeIcon icon={faMusic}></FontAwesomeIcon>
+                        <span>Clonify - Cloning that music platform for learning purpose</span>
                     </a>
                 </div>
                 <ul>
@@ -52,7 +52,7 @@ const SideBar = () => {
                 <div className="languages">
                     <button className="languages__button">
                     <FontAwesomeIcon icon={faGlobe}></FontAwesomeIcon>
-                        <span>Português do Brasil</span>
+                    <span>Português do Brasil</span>
                     </button>
                 </div>
             </div>

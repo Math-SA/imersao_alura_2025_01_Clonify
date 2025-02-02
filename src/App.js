@@ -51,7 +51,7 @@ function App() {
       </div>
 
       {showFooterPopup && (
-        <FooterPopup message="This is a spotify clone made for educational purposes and is not affiliated in any way with Spotify." button="Inscreva-se Grátis" cancel="Agora não" isVisible={showFooterPopup} onClose={onClose}></FooterPopup>
+        <FooterPopup message="This website is a clone made for educational purposes and is not affiliated in any way with that music platform." button="Inscreva-se Grátis" cancel="Agora não" isVisible={showFooterPopup} onClose={onClose}></FooterPopup>
       )}
     </div>
   );
