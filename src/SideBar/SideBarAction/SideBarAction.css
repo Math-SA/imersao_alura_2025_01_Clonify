@@ -1,0 +1,39 @@
+.sidebar-action{
+    display:flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #242424;
+    color:#FFF;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 8px 0;
+    padding:16px 20px;
+    border-radius:10px;
+    gap:10px;
+}
+
+.sidebar-action__title{
+    font-weight: 700;
+}
+
+.sidebar-action__subtitle{
+    font-weight: 500;
+    font-size: 12px;
+    padding: 0px 10px;
+}
+
+.sidebar-action__button{
+    display: flex;
+    justify-content: center;
+    background-color: #FFF;
+    color:#000;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    padding:10px;
+    margin-top: 20px;
+    border:0;
+    min-width: 100px;
+    gap: 8px;
+}

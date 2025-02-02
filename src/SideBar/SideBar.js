@@ -1,5 +1,6 @@
 import React from "react";
 import './SideBar.css';
+import SideBarAction from "./SideBarAction/SideBarAction";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBook, faGlobe, faHome, faMusic, faPlus, faSearch, faWaveSquare } from "@fortawesome/free-solid-svg-icons";
 
@@ -37,15 +38,14 @@ const SideBar = () => {
                     </button>
                     <FontAwesomeIcon icon={faPlus}></FontAwesomeIcon>
                 </div>
-                <section className="section-playlist">
-                    <div className="section-playlist__content">
-                        <span className="text title">Crie sua primeira playlist</span>
-                        <span className="text subtitle">É fácil, vamos te ajudar.</span>
-                        <button className="section-playlist__button">
-                            <span>Criar playlist</span>
-                        </button>
-                    </div>
-                </section>
+
+                <SideBarAction 
+                    title="Crie sua primeira playlist"
+                    subtitle="É fácil, vamos te ajudar."
+                    button="Criar playlist"                    
+                    />
+
+
                 <div className="library__cookies">
                     <a href="">Cookies</a>
                 </div>
