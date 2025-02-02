@@ -17,6 +17,10 @@ json-server --watch api-artists/artists.json --port 3210
 
 ## aula-5 Código criado seguindo aula 5 + desafio - https://github.com/Math-SA/imersao_alura_2025_01_Clonify/tree/aula-5
 
-## luri_review Código ajustado seguindo sugestões da Luri - 
+## luri_review Código ajustado seguindo sugestões da Luri - https://github.com/Math-SA/imersao_alura_2025_01_Clonify/tree/luri
+Informações: 
+ai_collaboration_log.md 
+luri_chat.md
+
 
 ## main Versão final - https://github.com/Math-SA/imersao_alura_2025_01_Clonify
