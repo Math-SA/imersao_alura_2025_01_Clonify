@@ -1,3 +1,7 @@
+# production
+/build
+
+
 # Logs
 logs
 *.log
@@ -41,6 +45,8 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+.pnp
+
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
@@ -72,12 +78,24 @@ web_modules/
 # Yarn Integrity file
 .yarn-integrity
 
+# misc
+.DS_Store
+/public/storage
+/storage/*.key
+/vendor
+auth.json
+/.idea
+/.vscode
+composer.lock
+package-lock.json
+
 # dotenv environment variable files
 .env
 .env.development.local
 .env.test.local
 .env.production.local
 .env.local
+.env.backup
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
@@ -128,3 +146,4 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
