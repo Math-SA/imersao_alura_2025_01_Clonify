@@ -1,114 +1,80 @@
 import React from "react";
 import './Recommender.css';
-
+import './RecommenderItem/RecommenderItem'
+import RecommenderItem from "./RecommenderItem/RecommenderItem";
 
 const Recommender = () => {
-    return (
-            <div className="playlist-container">
-                <div id="result-playlists">
-                    <div className="playlist">
-                        <h1 id="greeting">Boas vindas</h1>
-                        <h2 className="session">Navegar por todas as seções</h2>
-                    </div>
+    const imageNames = [
+        '1.jpeg',
+        '2.png',
+        '3.jpeg',
+        '4.jpeg',
+        '5.jpeg',
+        '6.jpeg',
+        '7.jpeg',
+        '8.jpeg',
+        '9.jpeg',
+        '10.jpeg',
+        '11.jpeg',
+        '12.jpeg',
+        '13.jpeg',
+        '14.jpeg',
+        '15.jpeg'
+    ];
+    const images = imageNames.map(name => require(`../assets/playlist/${name}`));
 
-                    <div className="offer__scroll-container">
-                        <div className="offer__list">
-                            <section className="offer__list-item">
-                                <a href="" className="cards">
-                                    <div className="cards card1">
-                                        <img src="./src/assets/playlist/1.jpeg" alt="" />
-                                        <span>Boas festas</span>
-                                    </div>
-                                </a>
-                                <a href="" className="cards">
-                                    <div className="cards card2">
-                                        <img src="./src/assets/playlist/2.png" alt="" />
-                                        <span>Feitos para você</span>
-                                    </div>
-                                </a>
-                                <a href="" className="cards">
-                                    <div className="cards card3">
-                                        <img src="./src/assets/playlist/3.jpeg" alt="" />
-                                        <span>Lançamentos</span>
-                                    </div>
-                                </a>
-                                <a href="" className="cards">
-                                    <div className="cards card4">
-                                        <img src="./src/assets/playlist/4.jpeg" alt="" />
-                                        <span>Creators</span>
-                                    </div>
-                                </a>
-                                <a href="" className="cards">
-                                    <div className="cards card5">
-                                        <img src="./src/assets/playlist/5.jpeg" alt="" />
-                                        <span>Para treinar</span>
-                                    </div>
-                                </a>
-                                <a href="" className="cards">
-                                    <div className="cards card6">
-                                        <img src="./src/assets/playlist/6.jpeg" alt="" />
-                                        <span>Podcasts</span>
-                                    </div>
-                                </a>
-                                <a href="" className="cards">
-                                    <div className="cards card7">
-                                        <img src="./src/assets/playlist/7.jpeg" alt="" />
-                                        <span>Sertanejo</span>
-                                    </div>
-                                </a>
-                                <a href="" className="cards">
-                                    <div className="cards card8">
-                                        <img src="./src/assets/playlist/8.jpeg" alt="" />
-                                        <span>Samba e pagode</span>
-                                    </div>
-                                </a>
-                                <a href="" className="cards">
-                                    <div className="cards card9">
-                                        <img src="./src/assets/playlist/9.jpeg" alt="" />
-                                        <span>Funk</span>
-                                    </div>
-                                </a>
-                                <a href="" className="cards">
-                                    <div className="cards card10">
-                                        <img src="./src/assets/playlist/10.jpeg" alt="" />
-                                        <span>MPB</span>
-                                    </div>
-                                </a>
-                                <a href="" className="cards">
-                                    <div className="cards card11">
-                                        <img src="./src/assets/playlist/11.jpeg" alt="" />
-                                        <span>Rock</span>
-                                    </div>
-                                </a>
-                                <a href="" className="cards">
-                                    <div className="cards card12">
-                                        <img src="./src/assets/playlist/12.jpeg" alt="" />
-                                        <span>Hip Hop</span>
-                                    </div>
-                                </a>
-                                <a href="" className="cards">
-                                    <div className="cards card13">
-                                        <img src="./src/assets/playlist/13.jpeg" alt="" />
-                                        <span>Indie</span>
-                                    </div>
-                                </a>
-                                <a href="" className="cards">
-                                    <div className="cards card14">
-                                        <img src="./src/assets/playlist/14.jpeg" alt="" />
-                                        <span>Relax</span>
-                                    </div>
-                                </a>
-                                <a href="" className="cards">
-                                    <div className="cards card15">
-                                        <img src="./src/assets/playlist/15.jpeg" alt="" />
-                                        <span>Música Latina</span>
-                                    </div>
-                                </a>
-                            </section>
-                        </div>
+    const bgColors = ["#006450", "#8400e7", "#1e3264",
+        "#8c1932", "#e8115b", "#537aa1", "#8e66ac",
+        "#148a08", "#1e3264", "#e91429", "#503750",
+        "#d84000", "#ba5d07", "#001e50", "#3c1e50"
+    ]
+
+    const titles = [
+        "Boas Festas",
+        "Feitos para você",
+        "Lançamentos",
+        "Creators",
+        "Para treinar",
+        "Podcasts",
+        "Sertanejo",
+        "Samba e pagode",
+        "Funk",
+        "MPB",
+        "Rock",
+        "Hip Hop",
+        "Indie",
+        "Relax",
+        "Música Latina"
+    ];
+
+    let items = titles.map((title, index) => 
+        <RecommenderItem image={images[index]}
+            title={title}
+            bgColor={bgColors[index]} 
+            key={index}
+            />
+    ) 
+
+
+    return (
+        <div className="playlist-container">
+            <div id="result-playlists">
+                <div className="playlist">
+                    <h1 id="greeting">Boas vindas</h1>
+                    <h2 className="session">Navegar por todas as seções</h2>
+                </div>
+
+                <div className="offer__scroll-container">
+                    <div className="offer__list">
+                        <section className="offer__list-item">
+                            
+                            {items}
+
+                        </section>
                     </div>
                 </div>
             </div>
+        </div>
 
     )
 }
