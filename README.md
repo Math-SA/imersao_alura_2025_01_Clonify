@@ -7,7 +7,8 @@ This website was made as an exercise and is not affiliated with Spotify in any w
 
 # Preview
 ## Página inicial
-![image](https://github.com/user-attachments/assets/623ef322-a5e4-426b-ac5c-56df7d400a97)
+![image](https://github.com/user-attachments/assets/3e13d3b3-c0f9-4236-b2ed-30e4b55ec2c6)
+
 
 ## Busca
 ![image](https://github.com/user-attachments/assets/5f50f98b-8ccb-4057-9bd3-270f96deba1a)
