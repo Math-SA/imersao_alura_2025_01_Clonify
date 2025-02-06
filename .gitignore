@@ -87,7 +87,7 @@ auth.json
 /.idea
 /.vscode
 composer.lock
-package-lock.json
+
 
 # dotenv environment variable files
 .env
